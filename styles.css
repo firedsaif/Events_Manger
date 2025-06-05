@@ -30,6 +30,10 @@ body {
   color: #2c3e50;
 }
 
+.logo h2:hover {
+  cursor: pointer;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -40,21 +44,31 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s, font-size 0.3s; 
 }
 
 .nav-links a:hover {
   color: #3498db;
+  font-size: large;
+
 }
 
 .hero {
-  background-color: #f8f9fa;
-  padding: 4rem 2rem;
+  background-color: beige;
+  padding: 8rem 2rem;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
+  color: #2c3e50;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero-content p {
   color: #2c3e50;
   max-width: 800px;
   margin: 0 auto;
@@ -82,6 +96,9 @@ body {
   margin-bottom: 2rem;
   text-align: center;
 }
+ .search-container i {
+  color: #7f8c8d;
+}
 
  #searchInput {
   padding: 0.75rem;
@@ -99,6 +116,8 @@ body {
 
 /* Events Grid */
 .events-grid {
+  background-color: beige;
+  padding: 4rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -111,13 +130,13 @@ body {
   border-radius: 8px;
   padding: 1.5rem;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .event-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 .event-name {
